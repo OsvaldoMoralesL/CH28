@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/style.css">
+    <title>HTML Avanzado</title>
+</head>
+<body>
+<!--  Tablas en HTML
+
+    Una tabla es un conjuntode filas y columnas que contienen informacion necesaria, nos sirve para organizar y tener una mejor visibilidad de los elementos.
+
+    ** Celda, es la interseccion en tre una fila y una columna que contiene informacion necearia.
+    Definimos las celdas utilizando la etiqueta <td></td>
+
+
+    **Filas,  las filas se definen mediante la etiqueta <tr></tr>
+
+    **Encabezado de tabla.
+    se definen los encabezados de tabla mediante la etiqueta <th></th>
+
+    Para iniciar una tabla en HTML, se define la etiqueta<table></table> y se divide en dos partes
+        -Cabeza de la tabla: <th></th>
+        -Cuerpo de la tabla: <tbody></tbody>
+-->
+    <p>Tabla de nombres</p>
+<table>
+    <thead>
+        <tr> <!-- Fila 1-->
+                <th>Nombre</th>
+                <th>Edad</th>
+                <th>Pais</th>
+        </tr>
+    </thead>
+    <tbody>
+            <tr><!--Fila 2-->
+                <td>Hiram Navarro</td>
+                <td>23</td>
+                <td>México</td>
+            </tr>
+            <tr><!--Fila 3-->
+                <td>Paulina Ensastiga</td>
+                <td>19</td>
+                <td>Portugal</td>
+            </tr>
+            <tr><!--Fila 4-->
+                <td>Daniel Corona</td>
+                <td>22</td>
+                <td>Rusia</td>
+            </tr>
+    </tbody>
+</table>
+<hr>
+<br>
+        <!--Tabla 2
+        Crear una tabla donde muestres el nombre, el apellido deñ entrenador pokemon y su pokemon base
+        -->
+<!--
+    para agrergar un titulo a la tabla, utilizareoms la etiqueta <caption>
+-->
+        
+        <table>
+                <caption>Maestros Pokemon</caption>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Pokemon</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Osvaldo</td>
+                        <td>Morales</td>
+                        <td>totodile<a href="https://www.pokemon.com/el/pokedex/totodile" Tottodile></a></td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Nancy</td>
+                        <td>Perez</td>
+                        <td>Moltres<br><img id="moltres" src="/asset/imagen/moltres.png" alt="moltres"></td>
+                    </tr>
+                    <tr>
+                        <td>Hiram</td>
+                        <td>Navarro</td>
+                        <td>Mew</td>
+                    </tr>
+                    <tr>
+                        <td>Kevin</td>
+                        <td>Gonzalez</td>
+                        <td>Mewtwo</td>
+
+                    </tr>
+
+                </tbody>
+
+        </table>
+
+<!--Diseña un horario de clases de lun-vier
+con 3 horarios
+8:00-9:00
+9:00-10:00
+10:00-11:00
+con las materias uw gustes agrega estilos para que tu horario quede chido
+-->
+<hr>
+<br>
+
+
+<table>
+    <caption> Horario Escolar</caption>
+                <thead>
+                    <tr>
+                        <th>Hora</th>
+                        <th>Lunes</th>
+                        <th>Martes</th>
+                        <th>Miercoles</th>
+                        <th>Jueves</th>
+                        <th>Viernes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <td>8:00-9:00</td>
+                    <td>Fisica</td>
+                    <td>Matematicas</td>
+                    <td></td>
+                    <td>Cocteleria</td>
+                    <td>Cocina internacional</td>
+                    
+                </tr>
+                <tr>
+                    <td>9:00-10:00</td>
+                    <td>Fisica</td>
+                    <td>     </td>
+                    <td>Quimica</td>
+                    <td>Fisica</td>
+                    <td>Cocteleria</td>
+                    
+                </tr>
+                <tr>
+                    <td>10:00-11:00</td>
+                    <td>Cocteleria</td>
+                    <td>Cocina internacional</td>
+                    <td>Quimica</td>
+                    <td>mercadotecnia</td>
+                    <td>Cocina prehispanica</td>
+                </tr>
+                
+                   
+
+
+                </tbody>
+
+
+
+
+</table>
+
+
+
+</body>
+</html>
