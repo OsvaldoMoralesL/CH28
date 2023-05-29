@@ -152,11 +152,227 @@ con las materias uw gustes agrega estilos para que tu horario quede chido
 
 
                 </tbody>
-
-
-
-
 </table>
+<!--
+Crear marcadores en HTML.
+Los mRCdores son utilwa cuando tienes una pagina web muy larga. Para crear un marcador siga los siguientes pasos
+
+1.- Crear el marcador y agregar un enlace
+2.-Indcar u atributo (id) para el marcador
+
+-->
+<hr>
+<a href="#parrafito3">parrafito3</a>
+<br>
+<a href="/HTML/login.html">Inicia sesión</a>
+<br>
+<a href="/HTML/login.html#p4">Mira el parrafo 4 de login</a>
+
+
+<p id="parrafito1">P1Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias adipisci inventore commodi placeat laboriosam ipsa, ipsum molestiae voluptate enim ullam facilis ad corrupti autem suscipit blanditiis architecto eius voluptas quia!</p>
+<br>
+
+<p id="parrafito2">P1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium sequi praesentium quo eaque alias expedita ratione saepe. Asperiores commodi autem architecto voluptates id eius deserunt ullam tenetur, repellat dolores et.</p>
+<br>
+
+<p id="parrafito3">P3 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti provident voluptate ut omnis ducimus asperiores quam. Est quos non fugiat totam rem impedit a, dolore dolores recusandae aspernatur doloremque culpa.</p>
+<hr>
+
+<!--  ======== Formulario HTML
+    Elemento que se encarga de rcopilar informacion de un usiario para enviarlo a un servidor para su proceamiento.
+
+----Elementos de un formulario
+    <form></form> Se utiiza ara crear un formulario HTML para la entrada de un usuario.
+
+    Direfentes tipos de entrada como campos de Textp, casillas de verificacion, Botones de opcion, botones de envio. etc.
+
+-->
+
+<form>
+    <label for="user">Nobre de usuario</label>
+    <input type="text" id="user" name="user">
+</form><br>
+
+<!-- Elemento <label>
+    Define una etiqueta para formularios y es util para los usuarios de lectores de pantalla. Cuando el usuario hace clicl en el texto dentro del elemento <label> alterna el boton de opcion/casilla de verificacion.
+            -for: debe ser igual al atributo id del elemento <input> para unirlos
+
+    --Elemento <input>
+    es el elemento de formulario mas usado y se puede mostrar segun el atributo "type"
+        Tipos de <input> (type)
+            -text. Permite introducir texto
+            -password. Permite introducir una ocntraseña y agregar asteristos o puntos para ocultar la informacion
+-->
+
+<form action="">
+    <label for="password">Contraseña</label>
+    <input type="password" id="password" name="password">
+    <br>
+    <br>
+    <!--Number. Tipo numerico para elegir numeros. Se pueden definir numeros minimos (min="numreo") o numeros maximos (max="numero")
+    -->
+    <label for="edad">Escribe tu edad</label>
+    <input type="number" id="edad" name="edad" min="18" max="34" placeholder="minimo 5 y maximo 10 años">
+    <br>
+    <br>
+
+<!--
+    email. Solicita el usi de @ ara escribir
+-->
+
+
+<label for="correo_electronico">Escribe tu correo electronico</label>
+<input type="email" id="correo_electronico" name="correo_electronico">
+<br>
+<br>
+
+<!--Si queremos un cuadro de texto para realizar comentarios de utiliza la etiqueta textarea-->
+
+<label for="Escribe un comentario"></label>
+<textarea name="comentario" id="comentarios" cols="30" rows="10" placeholder="Maximo 15 palabras"></textarea>
+
+<br>
+<br>
+
+<!--
+    Date. Despliega un calendario para seleccionar, dia, mes año en formato (dd-mm-aaaa)
+-->
+    <label for="selecciona tu fecha de nacimiento"></label>
+        <input type="date" id="nacimiento" name="nacimiento">
+<br>
+<br>
+ <!--
+    Botones de radio. Define un boton de opcion, permite al usiario seleccionar solamente UNA opcion de un numero de opciones
+ -->
+
+    <p>Elige tu lenguaje de programacion fav</p>
+     <input type="radio" name="lenguaje_fav" id="java" value="java">
+
+    <label for="java">JAVA</label><br>
+    <input type="radio" id="javascript" name="lenguaje_fav" value="javascript">
+    <label for="javascript">JAVASCRIPT</label><br>
+    <input type="radio" name="lenguaje_fav" id="python" value="python">
+    <label for="python">PYTHON</label>
+    <br>
+    <br>
+     <!--
+        Checkbox. Define una casilla de verificacion, donde el usuario puede seleccionar CERO o mas opciones de un numero limitado de opciones
+     -->
+
+     <p>Seleccion de los idiomas que hablas</p>
+     <input type="checkbox" id="idioma" name="idioma" value="ingles">
+     <label for="idioma1">Ingles</label>
+     <br>
+     <input type="checkbox" id="idioma2" name="idioma2" value="spanish">
+     <label for="idioma2">spanish</label>
+     <br>
+     <input type="checkbox" id="idioma3" name="idioma3" value="french">
+     
+     <!-- file. Es un camp de seleccion de archivos y un boton "examinar" que permite cargar archivos-->
+
+
+     <label for="miArchivo">Seleccionar un archivo en formato PDF</label>
+     <input type="file" id="miArchivo" name="miArchivo">
+
+     <br>
+     <br>
+     <!--
+        Experimetando con documetacion de w3Schools
+        -range.
+     -->
+     <label for="">Vlumen (entre 0 y 50)</label>
+<input type="range" id="vol" name="vol" min="0" max="50">
+<br>
+
+</form>
+
+<!--==========================Botones========================
+    Permite controlar el envio de informacion del usuario. El type "submit" envia al servidor lo que se escribe y el type="reset" permite resetear la informacion contenida en el formulario-->
+<!--
+    Reto, diseñar un formulario de regitro para una pagina de videojuegos ¿que se bnecesita
+
+instrucciones
+1.-Todos los campos deben ser obligatorios "required"
+2
+
+    -nombre : "text"
+    -apellido:   "text"
+    -Nombre de usuario:  "text"
+    -Correo electronico:  "email"
+    -edad (Min 18):  "number"
+    -contraseña:  "password"
+    -boton que diga "registrarse"
+    -Boton que diga "limiar formulario"
+-->
+<h4>Formulario VG</h4>
+
+<!-- -->
+    <form  action="/action_page.php" method="post" target="_blank">
+
+        <label for="user">Nombre</label>
+    <input type="text" id="user" name="user" required>
+    <br>
+    <br>
+    <label for="user">Apellido</label>
+        <input type="text" id="user" name="user" required>
+    <br>
+    <br>
+    <label for="user">Nobre de usuario</label>
+        <input type="text" id="user" name="user" required>
+    <br>
+    <br>
+    <label for="correo_elec">Correo electronico</label>
+        <input type="email" id="correo_elec" name="correo_elec" required>
+    <br>
+    <br>
+     <label for="edad">edad</label>
+        <input type="number" id="edad" name="edad" min="18" placeholder="minimo 18" required>
+    <br>
+    <br>
+    <label for="edad"></label>
+
+    <label for="password">Contraseña</label>
+        <input type="password" id="password" name="password" required>
+
+        <br>
+        <br>
+        
+        <button type="submit"> Registrarse</button>
+        <button type="reset">Limpiar formulario</button>
+    </form>
+
+<!-- =========Boton enviar=========
+
+type="submit" define un boton para enviar los datos del formulario a un controlador de formulario. El conrtolados de formulario suele ser un  archivo con un script (JS) para procesar los datos de entrada.
+El controlador de formulario se especifica en el atributo action del formulario
+
+
+-->
+<form action="" method="get" >
+    <label for="user">Nobre de usuario</label>
+        <input type="text" id="user" name="user" required>
+<br>
+<br>
+
+<label for="password">Contraseña</label>
+        <input type="password" id="password" name="password" required>
+<br>
+<br>
+
+    <button type="submit"></button>
+
+
+
+
+
+</form>
+
+<br>
+<br>
+<br>
+<br>
+
+
 
 
 
